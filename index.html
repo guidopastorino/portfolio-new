@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- main CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- bootstrap icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- fontawesome icons (technology) -->
+    <script src="https://kit.fontawesome.com/e0b32b1712.js" crossorigin="anonymous"></script>
+    <title>Guido | Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar-wrapper">
+      <div class="navbar">
+        <div class="navbar__left">
+          <!-- logo -->
+          <div class="navbar__logo">
+            <a href="#"> Guido </a>
+          </div>
+        </div>
+
+        <div class="navbar__right">
+          <!-- navbar links -->
+          <nav class="nav">
+            <ul class="nav__ul">
+              <li class="nav__li"><a href="#section-1" class="nav__link">About</a></li>
+              <li class="nav__li">
+                <a href="#section-2" class="nav__link">Technologies</a>
+              </li>
+              <li class="nav__li">
+                <a href="#section-3" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__li">
+                <a href="#section-4" class="nav__link">Contact me</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- change theme btn -->
+          <div class="navbar__theme">
+            <button id="btnChangeTheme" class="moon">
+              <!-- sun icon -->
+              <i class="bi bi-brightness-high-fill"></i>
+              <!-- moon icon -->
+              <i class="bi bi-moon-fill"></i>
+            </button>
+          </div>
+
+          <!-- hamburguer btn -->
+          <div class="navbar__hamburguer">
+            <button id="btnOpenMenu">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <header>
+      <h1 id="typeText"></h1>
+    </header>
+
+    <main>
+      <!-- about -->
+      <section id="section-1">
+        <div class="about">
+          <h2>About</h2>
+            <!-- about me -->
+            <p>
+              17 year old Frontend Developer. I like to face challenges
+              and real world projects. I program and learn while I acquire
+              new knowledge. I see in programming a world full of opportunities and changes in which you have to constantly adapt and learn.
+            </p>
+        </div>
+      </section>
+
+      <!-- technologies -->
+      <section id="section-2">
+        <div class="technologies">
+          <h2>Technologies</h2>
+
+          <div class="technologies__stack">
+            <div title="HTML">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+
+            <div title="CSS">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+
+            <div title="JavaScript">
+              <i class="fa-brands fa-js"></i>
+            </div>
+
+            <div title="Bootstrap">
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+
+            <div title="React">
+              <i class="fa-brands fa-react"></i>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section id="section-3">
+        <h2>Projects</h2>
+
+        <!-- swiper container -->
+        <div class="projects">
+          <!-- Swiper -->
+          <div class="swiper mySwiper" style="padding: 10px 10px 30px;">
+            <div class="swiper-wrapper">
+              <!-- project -->
+              <div class="swiper-slide project">
+                <div class="project__image">
+                  <img
+                    src="./assets/facebook.JPG"
+                    alt="project image"
+                  />
+                </div>
+
+                <div class="project__title">
+                  <span>Facebook clone</span>
+                </div>
+
+                <div class="project__links">
+                  <a href="https://heartfelt-zuccutto-263b58.netlify.app/" target="_blank">
+                    <span>See Project</span>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+
+                  <a href="https://github.com/guidopastorino/facebook2" target="_blank">
+                    <span>Github Repo</span>
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- project -->
+              <div class="swiper-slide project">
+                <div class="project__image">
+                  <img
+                    src="assets/snap.JPG"
+                    alt="project image"
+                  />
+                </div>
+
+                <div class="project__title">
+                  <span>Snap Project - Frontend Mentor</span>
+                </div>
+
+                <div class="project__links">
+                  <a href="https://iridescent-empanada-fd39fa.netlify.app/" target="_blank">
+                    <span>See Project</span>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+
+                  <a href="https://github.com/guidopastorino/snap-project" target="_blank">
+                    <span>Github Repo</span>
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- project -->
+              <div class="swiper-slide project">
+                <div class="project__image">
+                  <img
+                    src="assets/nft.JPG"
+                    alt="project image"
+                  />
+                </div>
+
+                <div class="project__title">
+                  <span>NFT Card - Frontend Mentor</span>
+                </div>
+
+                <div class="project__links">
+                  <a href="https://wonderful-crisp-f38278.netlify.app/" target="_blank">
+                    <span>See Project</span>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+
+                  <a href="https://github.com/guidopastorino/guido-nft-card" target="_blank">
+                    <span>Github Repo</span>
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- project -->
+              <div class="swiper-slide project">
+                <div class="project__image">
+                  <img
+                    src="assets/google-tab.JPG"
+                    alt="project image"
+                  />
+                </div>
+
+                <div class="project__title">
+                  <span>Google new tab clone</span>
+                </div>
+
+                <div class="project__links">
+                  <a href="https://heartfelt-sorbet-d9e5c2.netlify.app/" target="_blank">
+                    <span>See Project</span>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+
+                  <a href="https://github.com/guidopastorino/google-tab-clone" target="_blank">
+                    <span>Github Repo</span>
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- btns prev & next -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <!-- contact me -->
+      <section id="section-4">
+        <h2>Contact me</h2>
+
+        <form class="form">
+          <!-- name -->
+          <div class="form__input-field div-name">
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder=" "
+              autocomplete="off"
+              required
+            />
+            <label for="name">Name</label>
+          </div>
+
+          <!-- surname -->
+          <div class="form__input-field div-surname">
+            <input
+              id="surname"
+              type="text"
+              name="surname"
+              placeholder=" "
+              autocomplete="off"
+              required
+            />
+            <label for="surname">Surname</label>
+          </div>
+
+          <!-- email -->
+          <div class="form__input-field div-email">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder=" "
+              autocomplete="off"
+              required
+            />
+            <label for="email">Email</label>
+          </div>
+
+          <!-- topic -->
+          <div class="form__input-field div-topic">
+            <input
+              id="topic"
+              type="text"
+              name="topic"
+              placeholder=" "
+              autocomplete="off"
+              required
+            />
+            <label for="topic">Topic</label>
+          </div>
+
+          <!-- message -->
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+            required
+          ></textarea>
+
+          <!-- btn send -->
+          <button id="btnForm" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_socials">
+        <ul>
+          <!-- github -->
+          <li>
+            <a href="https://github.com/guidopastorino" target="_blank" title="Github">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+
+          <!-- linkedin -->
+          <!-- <li>
+            <a href="#" target="_blank" title="Linkedin">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li> -->
+
+          <!-- YouTube -->
+          <!-- <li>
+            <a href="https://www.youtube.com/channel/UCIHo8Gfo8-DYYr1wN-VzWHg" target="_blank" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </li> -->
+
+          <!-- Twitter -->
+          <!-- <li>
+            <a href="#" target="_blank" title="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </li> -->
+
+          <!-- Instagram -->
+          <!-- <li>
+            <a href="#" target="_blank" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </footer>
+
+    <!-- menu mobile -->
+    <div id="menu" class="menu-close">
+      <button id="btnCloseMenu">
+        <i class="bi bi-x"></i>
+      </button>
+      <nav>
+        <ul>
+          <li>
+            <a href="#section-1">About</a>
+          </li>
+
+          <li>
+            <a href="#section-2">Technologies</a>
+          </li>
+
+          <li>
+            <a href="#section-3">Projects</a>
+          </li>
+
+          <li>
+            <a href="#section-4">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <!-- bg close menu -->
+    <div id="bg-close-menu" class="bg-hidden"></div>
+
+
+
+    <!-- modal email sent -->
+    <div id="modalEmailSent" class="d-none">
+      <button id="btnCloseEmailModal"><i class="bi bi-x"></i></button>
+      <div id="modalEmailImgs" class="modal-email__img-light">
+        <img src="assets/email-dark.svg" alt="email message">
+        <img src="assets/email-light.svg" alt="email message">
+      </div>
+      <span>Email enviado, gracias por contactarme!</span>
+    </div>
+
+
+
+
+
+    <!-- type effect JS -->
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <!-- swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- main JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
